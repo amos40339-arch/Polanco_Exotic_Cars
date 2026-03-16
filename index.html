@@ -1,132 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Polanco Exotic Cars | The Standard of Luxury</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <style>
-        :root { --accent: #2563eb; --bg: #050505; }
-        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: var(--bg); color: #fff; overflow-x: hidden; }
-        
-        /* 2026 Animated Mesh Gradient */
-        .mesh-bg {
-            position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;
-            background: radial-gradient(circle at 0% 0%, rgba(37, 99, 235, 0.15) 0%, transparent 50%),
-                        radial-gradient(circle at 100% 100%, rgba(30, 58, 138, 0.1) 0%, transparent 50%);
-        }
-
-        /* Glassmorphism 2.0 */
-        .glass { background: rgba(255, 255, 255, 0.02); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.08); }
-        .glass-card { transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1); }
-        .glass-card:hover { 
-            background: rgba(255, 255, 255, 0.05);
-            transform: translateY(-10px) scale(1.02);
-            border-color: var(--accent);
-            box-shadow: 0 0 40px rgba(37, 99, 235, 0.2);
-        }
-
-        /* High-Gloss Image Treatment */
-        .glossy-img { filter: contrast(1.1) brightness(1.05) saturate(1.1); transition: transform 0.8s ease; }
-        .glass-card:hover .glossy-img { transform: scale(1.1); }
-
-        /* Fluid Typography */
-        .hero-title { font-size: clamp(2.5rem, 8vw, 5rem); line-height: 1.1; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Polanco Exotic Cars</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+body{
+background: radial-gradient(circle at 20% 20%,#0f172a,#020617);
+min-height:100vh;
+}
+.glass{
+backdrop-filter: blur(16px);
+background: rgba(255,255,255,0.05);
+border:1px solid rgba(255,255,255,0.1);
+}
+</style>
 </head>
-<body class="antialiased">
-    <div class="mesh-bg"></div>
 
-    <nav class="sticky top-6 z-50 mx-auto max-w-7xl px-4">
-        <div class="glass rounded-2xl px-6 py-4 flex justify-between items-center">
-            <div class="flex items-center gap-3">
-                <img src="IMG_20260316_140105.jpg" alt="Logo" class="h-10 w-auto rounded-md">
-                <span class="font-extrabold tracking-tighter text-2xl">POLANCO</span>
-            </div>
-            <div class="hidden lg:flex gap-10 text-sm font-semibold tracking-wide text-gray-400">
-                <a href="#" class="hover:text-blue-500 transition">INVENTORY</a>
-                <a href="#" class="hover:text-blue-500 transition">BESPOKE</a>
-                <a href="#" class="hover:text-blue-500 transition">SHOWROOM</a>
-            </div>
-            <a href="https://wa.me/2349115648723" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2.5 rounded-xl text-sm font-bold shadow-lg shadow-blue-900/20 transition-all">
-                ENQUIRE
-            </a>
-        </div>
-    </nav>
+<body class="text-white font-sans">
 
-    <header class="relative pt-24 pb-16 px-6 text-center max-w-5xl mx-auto">
-        <span class="text-blue-500 font-bold tracking-[0.3em] text-xs uppercase mb-4 block">Lekki Phase 1, Lagos</span>
-        <h1 class="hero-title font-extrabold mb-8 tracking-tighter">
-            THE STANDARD <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-700 italic">OF EXOTICS.</span>
-        </h1>
-        <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
-            From the streets of Lagos to the global stage, we curate the world's most aggressive engineering masterpieces.
-        </p>
-    </header>
+<nav class="glass sticky top-0 z-50 px-6 py-4 flex justify-between items-center">
+<h1 class="text-xl md:text-2xl font-bold tracking-widest">POLANCO</h1>
+<div class="space-x-6 text-sm md:text-base">
+<a href="index.html" class="hover:text-gray-300">Home</a>
+<a href="inventory.html" class="hover:text-gray-300">Inventory</a>
+<a href="contact.html" class="hover:text-gray-300">Contact</a>
+</div>
+</nav>
 
-    <main class="max-w-7xl mx-auto px-6 pb-24">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            
-            <div class="glass-card rounded-[2.5rem] overflow-hidden lg:col-span-2 lg:row-span-2 relative group">
-                <img src="68574.jpg" class="glossy-img w-full h-full object-cover absolute inset-0" alt="Tesla Cybertruck">
-                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
-                <div class="absolute bottom-10 left-10 p-2">
-                    <span class="bg-white/10 backdrop-blur-md px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest mb-4 inline-block">Foundation Series</span>
-                    <h3 class="text-4xl md:text-5xl font-black mb-2">Tesla Cybertruck</h3>
-                    <p class="text-blue-400 text-2xl font-bold">₦350,000,000</p>
-                </div>
-            </div>
+<section class="flex items-center justify-center text-center px-6 py-32">
+<div>
+<h2 class="text-4xl md:text-6xl font-bold leading-tight">
+Luxury. Power. Prestige.
+</h2>
 
-            <div class="glass-card rounded-[2.5rem] overflow-hidden flex flex-col group">
-                <div class="h-64 overflow-hidden relative">
-                    <img src="68566.jpg" class="glossy-img w-full h-full object-cover" alt="Rolls Royce">
-                </div>
-                <div class="p-8">
-                    <h3 class="text-2xl font-bold mb-1">Cullinan Black Badge</h3>
-                    <p class="text-gray-500 text-sm mb-4 italic">Billionaire's Standard</p>
-                    <p class="text-blue-500 text-xl font-black">₦1,500,000,000</p>
-                </div>
-            </div>
+<p class="text-gray-400 mt-6 text-lg md:text-xl max-w-xl mx-auto">
+Polanco Exotic Cars delivers the world’s most elite automobiles to Lagos. Experience unmatched luxury and performance curated for the modern elite.
+</p>
 
-            <div class="glass-card rounded-[2.5rem] overflow-hidden flex flex-col group">
-                <div class="h-64 overflow-hidden relative">
-                    <img src="68558.jpg" class="glossy-img w-full h-full object-cover" alt="Lamborghini Urus">
-                </div>
-                <div class="p-8">
-                    <h3 class="text-2xl font-bold mb-1">Urus SE Hybrid</h3>
-                    <p class="text-gray-500 text-sm mb-4 italic">Performance Masterpiece</p>
-                    <p class="text-blue-500 text-xl font-black">₦550,000,000</p>
-                </div>
-            </div>
+<div class="mt-10 flex flex-col md:flex-row gap-4 justify-center">
+<a href="inventory.html" class="px-8 py-3 bg-white text-black rounded-xl font-semibold hover:bg-gray-200 transition">
+View Inventory
+</a>
 
-            <div class="glass-card rounded-[2.5rem] overflow-hidden lg:col-span-3 h-80 relative group">
-                <img src="68556.jpg" class="glossy-img w-full h-full object-cover" alt="Mercedes G63">
-                <div class="absolute inset-0 bg-gradient-to-r from-black to-transparent"></div>
-                <div class="absolute inset-y-0 left-10 flex flex-col justify-center">
-                    <h3 class="text-3xl font-black mb-2 uppercase italic tracking-tighter">Mercedes-AMG G63</h3>
-                    <p class="text-blue-400 text-2xl font-bold">₦320,000,000</p>
-                    <a href="https://wa.me/2349115648723?text=Interested%20in%20the%20G63" class="mt-4 text-xs font-bold underline tracking-widest hover:text-white transition">BOOK INSPECTION</a>
-                </div>
-            </div>
-        </div>
-    </main>
+<a href="contact.html" class="px-8 py-3 glass rounded-xl hover:bg-white/10 transition">
+Contact Concierge
+</a>
+</div>
+</div>
+</section>
 
-    <a href="https://wa.me/2349115648723" class="fixed bottom-8 right-8 z-[100] bg-green-500 hover:bg-green-600 p-4 rounded-2xl shadow-2xl transition-transform hover:scale-110 active:scale-95 group">
-        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-        <span class="absolute right-full mr-4 bg-white text-black px-4 py-2 rounded-xl text-xs font-bold opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">Chat with Concierge</span>
-    </a>
+<section class="px-6 py-24 max-w-6xl mx-auto text-center">
+<h3 class="text-3xl md:text-4xl font-bold mb-6">
+About Polanco Exotic Cars
+</h3>
 
-    <footer class="bg-black/50 border-t border-white/10 py-12 px-6">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
-            <div>
-                <p class="font-bold text-lg mb-2">POLANCO EXOTIC CARS</p>
-                <p class="text-gray-500 text-sm">Plot B, Km 33 Lekki-Epe Expressway, Lekki Phase 1, Lagos.</p>
-            </div>
-            <div class="flex gap-4">
-                <span class="text-gray-500 text-xs">© 2026 EMMAX CREATIONS</span>
-            </div>
-        </div>
-    </footer>
+<p class="text-gray-400 text-lg leading-relaxed">
+Located in Lekki, Lagos, Polanco Exotic Cars specializes in ultra-luxury vehicles for elite collectors and performance enthusiasts. Our curated fleet features the world's most prestigious brands — from Rolls-Royce elegance to Lamborghini aggression and the futuristic Tesla Cybertruck. We offer private viewing experiences and white-glove concierge service for every client.
+</p>
+</section>
+
+<footer class="glass mt-20 py-6 text-center text-gray-400 text-sm">
+© 2026 Polanco Exotic Cars — Lekki, Lagos
+</footer>
+
 </body>
-  </html>
+</html>
